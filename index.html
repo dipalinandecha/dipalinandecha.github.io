@@ -1,75 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Developer Portfolio - Mobile Utilities & Calendars</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      max-width: 760px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-      line-height: 1.6;
-    }
-    h1, h2 { color: #111; }
-    a { color: #1a73e8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .card {
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 12px;
-    }
-    footer {
-      margin-top: 40px;
-      border-top: 1px solid #e0e0e0;
-      padding-top: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipali Nandecha - Mobile Applications</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e1e4e8;
+            padding-bottom: 1rem;
+        }
+        h1 {
+            margin-bottom: 0.25rem;
+            color: #1a1f2c;
+        }
+        .subtitle {
+            color: #586069;
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+        .section-title {
+            color: #1a1f2c;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+            margin-top: 2rem;
+        }
+        .app-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .app-card {
+            border: 1px solid #e1e4e8;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 14px;
+            background-color: #fafbfc;
+        }
+        .app-card h3 {
+            margin-top: 0;
+            margin-bottom: 6px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            background-color: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .btn:hover {
+            background-color: #0256b9;
+        }
+        .legal-links a {
+            color: #0366d6;
+            text-decoration: none;
+            margin-right: 15px;
+        }
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e1e4e8;
+            font-size: 0.85rem;
+            color: #6a737d;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Developer Portfolio</h1>
-    <p>We build accessible regional calendar and cultural utility applications for Android users worldwide.</p>
-  </header>
+    <header>
+        <h1>Dipali Nandecha</h1>
+        <p class="subtitle">Official Developer Portal &amp; Calendar Utilities</p>
+    </header>
 
-  <section>
-    <h2>Our Published Applications</h2>
+    <main>
+        <section>
+            <h2 class="section-title">Calendar &amp; Panchang Applications</h2>
+            <ul class="app-list">
+                <!-- Jain Panchang & Calendar -->
+                <li class="app-card">
+                    <h3>Jain Panchang &amp; Calendar</h3>
+                    <p>Complete Jain calendar with Tithi, Pachkhan, festival dates, and auspicious timings.</p>
+                    <a class="btn" href="https://play.google.com/store/apps/details?id=com.dipali.jaincalendar" target="_blank" rel="noopener">View on Google Play</a>
+                </li>
 
-    <div class="card">
-      <h3>Tamil Calendar & Panchangam</h3>
-      <p>Daily auspicious times, Rahu Kalam, and festival schedules for Tamil-speaking users.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.tamilcalendarpanchangam..." target="_blank" rel="noopener">View on Google Play &rarr;</a>
-    </div>
+                <!-- Hindi Panchang and Calendar -->
+                <li class="app-card">
+                    <h3>Hindi Panchang &amp; Calendar</h3>
+                    <p>Daily Hindi Panchang, Shubh Muhurat, Vrat, and festival calendar.</p>
+                    <a class="btn" href="https://play.google.com/store/apps/details?id=com.hindipanchang.calendar" target="_blank" rel="noopener">View on Google Play</a>
+                </li>
 
-    <div class="card">
-      <h3>Jain Panchang & Calendar</h3>
-      <p>Comprehensive Jain tithi, pachkhan timings, parv days, and historical calendar details.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.dipali.jaincalendar" target="_blank" rel="noopener">View on Google Play &rarr;</a>
-    </div>
+                <!-- Tamil Calendar -->
+                <li class="app-card">
+                    <h3>Tamil Calendar &amp; Panchangam</h3>
+                    <p>Traditional Tamil daily sheet calendar, Nalla Neram, Raghu Kaalam, and festivals.</p>
+                    <a class="btn" href="https://play.google.com/store/apps/details?id=com.tamilcalendarpanchangam" target="_blank" rel="noopener">View on Google Play</a>
+                </li>
 
-    <div class="card">
-      <h3>Telugu Calendar & Panchangam</h3>
-      <p>Accurate Telugu muhurtham, varjyam, thithi, and traditional festive calendars.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.telugucalendarpanch..." target="_blank" rel="noopener">View on Google Play &rarr;</a>
-    </div>
-  </section>
+                <!-- Telugu Calendar -->
+                <li class="app-card">
+                    <h3>Telugu Calendar &amp; Panchangam</h3>
+                    <p>Accurate Telugu Panchangam details, Rahu Kalam, Yamagandam, and festival dates.</p>
+                    <a class="btn" href="https://play.google.com/store/apps/details?id=com.telugucalendarpanchangam" target="_blank" rel="noopener">View on Google Play</a>
+                </li>
+            </ul>
+        </section>
 
-  <footer>
-    <h2>Contact & Legal</h2>
-    <p>
-      <a href="/privacy-policy.html">Privacy Policy</a> &bull;
-      <a href="/terms.html">Terms of Service</a> &bull;
-      <a href="/app-ads.txt">app-ads.txt</a>
-    </p>
-    <p>Support Contact: <a href="mailto:support@yourdomain.com">support@yourdomain.com</a></p>
-    <p><small>&copy; 2026 Developer Portfolio. All rights reserved.</small></p>
-  </footer>
+        <section>
+            <h2 class="section-title">Privacy Policies &amp; Legal</h2>
+            <div class="legal-links">
+                <p>We are dedicated to safeguarding user privacy. Review the individual policy documents below:</p>
+                <p>
+                    <a href="./jaincalendar_privacy.html">Jain Calendar Privacy Policy</a>
+                    <a href="./marathicalendar_privacy.html">Marathi Calendar Privacy Policy</a>
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Support &amp; Inquiries</h2>
+            <p>For questions, support, or data deletion requests regarding any of our applications, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:support@dipalinandecha.github.io">support@dipalinandecha.github.io</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dipali Nandecha. All rights reserved. | <a href="/app-ads.txt" style="color: #6a737d;">app-ads.txt</a></p>
+    </footer>
 
 </body>
 </html>
